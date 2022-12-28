@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(30, 30, 30);
+    font-family: 'Stardos Stencil', cursive;
+    color: lightgreen;
+}
+
+h1 {
+    /* font-family: 'Stardos Stencil', cursive; */
+    font-size: 33px;
+    /* color: lightgreen; */
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+}
+
+.square {
+    width: 7px;
+    height: 7px;
+    border: 1px solid orange;
+    background-color: red;
+}
+
+.square.active {
+    background-color: yellow;
+}
+
+.square.dots {
+    background-color: yellow;
+}
+
+.days {
+    margin-top: 10px;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.days span{
+    width: 33%;
+    text-align: center;
+    /* color: lightgreen; */
+    font-size: 20px;
+}
