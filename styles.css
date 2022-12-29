@@ -9,7 +9,7 @@ body {
     overflow: hidden;
     background-color: rgb(30, 30, 30);
     font-family: 'Stardos Stencil', cursive;
-    color: lightgreen;
+    color: rgb(200, 200, 200);
 }
 
 h1 {
@@ -26,16 +26,16 @@ h1 {
 .square {
     width: 7px;
     height: 7px;
-    border: 1px solid orange;
-    background-color: red;
+    border: 1px solid rgb(100, 100, 100);
+    background-color: black;
 }
 
 .square.active {
-    background-color: yellow;
+    background-color: rgb(230, 230, 230);
 }
 
 .square.dots {
-    background-color: yellow;
+    background-color: rgb(200, 200, 200);
 }
 
 .days {
