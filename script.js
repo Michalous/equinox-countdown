@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var container = document.getElementById('container')
     
+    // Create 41 x 9 matrix
     for (var i = 0; i < 369; i++) {
         var square = document.createElement('div')
         square.classList.add('square')
@@ -21,15 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
         container.appendChild(square)
     }
     
+    // Dots between numbers
     var dot_positions = [137, 219, 151, 233]
     for (var i = 0; i < 4; i++) {
-        console.log(i)
         document.querySelectorAll(`[data-no='${dot_positions[i]}']`)[0].classList.add('dots')
     }
+
+    // Hello message
+    var hello = [43, 47, 84, 88, 125, 129, 166, 167, 168, 169, 170, 207, 211, 248, 252, 289, 293,
+                 49, 50, 51, 52, 53, 90, 131, 172, 173, 174, 175, 213, 254, 295, 296, 297, 298, 299,
+                 57, 98, 139, 180, 221, 262, 303, 304, 305, 306, 307,
+                 63, 104, 145, 186, 227, 268, 309, 310, 311, 312, 313,
+                 72, 73, 74, 112, 116, 153, 157, 194, 198, 235, 239, 276, 280, 318, 319, 320,
+                 79, 120, 161, 202, 243, 325]
+    for (var i = 0; i < hello.length; i++) {
+        document.querySelectorAll(`[data-no='${hello[i]}']`)[0].classList.add('active')
+    }
+
     
+    // starting positions for each digit
     var positions = [42, 48, 56, 62, 70, 76]
 
-    var to_print = [0, 2, 2, 3, 4, 5]
     
     function drawDigit(digit, position) {
         for (var i = 0; i < digits[digit].length; i++) {
