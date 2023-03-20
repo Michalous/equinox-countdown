@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Time calculations
     // Set the date we're counting down to
-    var countDownDate = new Date("Mar 20, 2023 21:24:00").getTime()
+    var countDownDate = new Date("Jun 21, 2023 15:57:00").getTime()
     var x = setInterval(function() {
         // Get today's date and time
         var now = new Date().getTime()
